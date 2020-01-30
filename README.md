@@ -8,3 +8,6 @@
 2) Get to scraping! 
     
     -See internal documentation for further breakdown
+    
+    
+For Example Output click image "active_Players.PNG"
