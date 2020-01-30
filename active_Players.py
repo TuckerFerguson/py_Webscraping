@@ -13,20 +13,20 @@ import time
 html_Pool = urllib3.PoolManager()
 count = 1
 print("""
-         1) Utilizing urllib3 to fetch webpage: "www.oldschool.runescape"
-         2) Using BeautifulSoup to traverse tree and grab data
-         3) Enjoy!     
+✝ Utilizing urllib3 to fetch webpage: "www.oldschool.runescape"
+* Using BeautifulSoup to traverse html and grab data
+* Enjoy!     
 """)
 #outputs active player count 
 def sleeper(number_Active):
     global count
     t = time.localtime()
     currentTime = time.strftime("%H:%M:%S", t)
-    print("{}) Active Players: {} at {}".format(count, number_Active,currentTime))
+    print("{}) Active Players: {} at {}\n".format(count, number_Active,currentTime))
     count += 1
 
 #arbitrary range 10 using time module to delay consecutive scrapes (2 sec)
-for i in range(9):
+for i in range(5):
     time.sleep(2)
 #Using oldschool runescapes homepage to pull data
     url = html_Pool.request('GET',"https://oldschool.runescape.com/")
