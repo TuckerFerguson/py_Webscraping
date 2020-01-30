@@ -20,7 +20,9 @@ print("""
 #outputs active player count 
 def sleeper(number_Active):
     global count
-    print("{}) Active Players: {}".format(count, number_Active))
+    t = time.localtime()
+    currentTime = time.strftime("%H:%M:%S", t)
+    print("{}) Active Players: {} at {}".format(count, number_Active,currentTime))
     count += 1
 
 #arbitrary range 10 using time module to delay consecutive scrapes (2 sec)
