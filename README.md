@@ -1,9 +1,9 @@
-1) Install Dependencies: requests, and BeautifulSoup
+1) Install Dependencies: urllib3 and BeautifulSoup
 	
-In terminal: $pip install requests BeautifulSoup4
+    In terminal: $pip install BeautifulSoup4 urllib3
 
-    - requests: Performs HTTP requests
-	- BeautifulSoup4 : Perform all HTML Processing
+	-BeautifulSoup4 : Performs all HTML Processing
+    -urllib3 : Handles accessing the webpage
 
 2) Get to scraping! 
     
